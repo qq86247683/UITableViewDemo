@@ -21,6 +21,7 @@
 		CD871277184E0D0E004F80BC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD871259184E0D0D004F80BC /* UIKit.framework */; };
 		CD87127F184E0D0E004F80BC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CD87127D184E0D0E004F80BC /* InfoPlist.strings */; };
 		CD871281184E0D0E004F80BC /* UITableViewDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CD871280184E0D0E004F80BC /* UITableViewDemoTests.m */; };
+		CD87128C184E0DB9004F80BC /* DataBase.m in Sources */ = {isa = PBXBuildFile; fileRef = CD87128B184E0DB9004F80BC /* DataBase.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,8 @@
 		CD87127C184E0D0E004F80BC /* UITableViewDemoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "UITableViewDemoTests-Info.plist"; sourceTree = "<group>"; };
 		CD87127E184E0D0E004F80BC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		CD871280184E0D0E004F80BC /* UITableViewDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UITableViewDemoTests.m; sourceTree = "<group>"; };
+		CD87128A184E0DB9004F80BC /* DataBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataBase.h; sourceTree = "<group>"; };
+		CD87128B184E0DB9004F80BC /* DataBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataBase.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +120,7 @@
 				CD871267184E0D0E004F80BC /* Main.storyboard */,
 				CD87126A184E0D0E004F80BC /* ViewController.h */,
 				CD87126B184E0D0E004F80BC /* ViewController.m */,
+				CD87128D184E15B1004F80BC /* Molder */,
 				CD87126D184E0D0E004F80BC /* Images.xcassets */,
 				CD87125C184E0D0D004F80BC /* Supporting Files */,
 			);
@@ -150,6 +154,15 @@
 				CD87127D184E0D0E004F80BC /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CD87128D184E15B1004F80BC /* Molder */ = {
+			isa = PBXGroup;
+			children = (
+				CD87128A184E0DB9004F80BC /* DataBase.h */,
+				CD87128B184E0DB9004F80BC /* DataBase.m */,
+			);
+			name = Molder;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -251,6 +264,7 @@
 			files = (
 				CD87126C184E0D0E004F80BC /* ViewController.m in Sources */,
 				CD871266184E0D0E004F80BC /* AppDelegate.m in Sources */,
+				CD87128C184E0DB9004F80BC /* DataBase.m in Sources */,
 				CD871262184E0D0E004F80BC /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -381,6 +395,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "UITableViewDemo/UITableViewDemo-Prefix.pch";
 				INFOPLIST_FILE = "UITableViewDemo/UITableViewDemo-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -394,6 +409,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "UITableViewDemo/UITableViewDemo-Prefix.pch";
 				INFOPLIST_FILE = "UITableViewDemo/UITableViewDemo-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
